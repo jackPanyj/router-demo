@@ -18,32 +18,30 @@ export default class Home extends Component{
             <div className="home">
                 <ul>
                     <li>
-                        <link to="/Home/List/HomePage">
-                            首页
-                        </link>
+                        <Link to='/Home/HomePage'>首页</Link>
                     </li>
                     <li>
-                        <link to="/Home/List/Singer">歌手</link>
+                        <Link to="/Home/Singer">歌手</Link>
                     </li>
                     <li>
-                        <link to="/Home/List/Special">专辑</link>
+                        <Link to="/Home/Special">专辑</Link>
                     </li>
                     <li>
-                        <link to="/Home/List/Ranking">排行榜</link>
+                        <Link to="/Home/Ranking">排行榜</Link>
                     </li>
                     <li>
-                        <link to="/Home/List/Playlist">分类歌单</link>
+                        <Link to="/Home/Playlist">分类歌单</Link>
                     </li>
                     <li>
-                        <link to="/Home/List/Mv">Mv</link>
+                        <Link to="/Home/Mv">Mv</Link>
                     </li>
                 </ul>
-                <Route path="/Home/List/HomePage" component={HomePage}/>
-                <Route path="/Home/List/Singer" component={Singer}/>
-                <Route path="/Home/List/Special" component={Special}/>
-                <Route path="/Home/List/Ranking" component={Ranking}/>
-                <Route path="/Home/List/Playlist" component={Playlist}/>
-                <Route path="/Home/List/Mv" component={Mv}/>
+                <Route path='/Home/HomePage' component={HomePage}/>
+                <Route path="/Home/Singer" component={Singer}/>
+                <Route path="/Home/Special" component={Special}/>
+                <Route path="/Home/Ranking" component={Ranking}/>
+                <Route path="/Home/Playlist" component={Playlist}/>
+                <Route path="/Home/Mv" component={Mv}/>
             </div>
         )
     }

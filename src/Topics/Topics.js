@@ -15,24 +15,24 @@ export default class Home extends Component{
             <div className="topics">
                 <ul>
                     <li>
-                        <Link to='/Topics/Topic/Topic'>
+                        <Link to='/Topics/Topic'>
                             Rendering with React
                         </Link>
                     </li>
                     <li>
-                        <Link to='/Topics/Topic/Topic_one'>
+                        <Link to='/Topics/Topic_one'>
                             Components
                         </Link>
                     </li>
                     <li>
-                        <Link to='/Topics/Topic/Topic_two'>
+                        <Link to='/Topics/Topic_two'>
                             Props v. State
                         </Link>
                     </li>
                 </ul>
-                <Route path='/Topics/Topic/Topic' component={Topic}/>
-                <Route path='/Topics/Topic/Topic_one' component={Topic_one}/>
-                <Route path='/Topics/Topic/Topic_two' component={Topic_two}/>
+                <Route path='/Topics/Topic' component={Topic}/>
+                <Route path='/Topics/Topic_one' component={Topic_one}/>
+                <Route path='/Topics/Topic_two' component={Topic_two}/>
             </div>
         )
     }
