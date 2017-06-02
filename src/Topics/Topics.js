@@ -4,35 +4,35 @@
  */
 import React,{Component} from 'react'
 import {Router,Route,Link} from 'react-router-dom'
-import Topic from '../Topic/Topic'
+import Topic from './Topic/Topic'
+import Topic_one from './Topic/Topic_one'
+import Topic_two from './Topic/Topic_two'
+import './topics.css'
 
 export default class Home extends Component{
-    render({match}){
+    render(){
         return (
-            <div>
-                <h2>Topics</h2>
+            <div className="topics">
                 <ul>
                     <li>
-                        <Link to={`${match.url}/rendering`}>
+                        <Link to='/Topics/Topic/Topic'>
                             Rendering with React
                         </Link>
                     </li>
                     <li>
-                        <Link to={`${match.url}/components`}>
+                        <Link to='/Topics/Topic/Topic_one'>
                             Components
                         </Link>
                     </li>
                     <li>
-                        <Link to={`${match.url}/props-v-state`}>
+                        <Link to='/Topics/Topic/Topic_two'>
                             Props v. State
                         </Link>
                     </li>
                 </ul>
-
-                <Route path={`${match.url}/:topicId`} component={Topic}/>
-                <Route exact path={match.url} render={() => (
-                    <h3>Please select a topic.</h3>
-                )}/>
+                <Route path='/Topics/Topic/Topic' component={Topic}/>
+                <Route path='/Topics/Topic/Topic_one' component={Topic_one}/>
+                <Route path='/Topics/Topic/Topic_two' component={Topic_two}/>
             </div>
         )
     }

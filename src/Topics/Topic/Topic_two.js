@@ -4,13 +4,12 @@
  */
 import React,{Component} from 'react'
 import {Router,Route,Link} from 'react-router-dom'
-import './about.css'
 
 export default class Home extends Component{
     render(){
         return (
-            <div className="about">
-                <h2>About</h2>
+            <div>
+                <h3>This is Topic_two</h3>
             </div>
         )
     }
