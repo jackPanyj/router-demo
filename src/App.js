@@ -32,7 +32,7 @@ export default class App extends Component{
                         <li ><Link to="/topics" style={style} onClick={this.changeColor}>下载客户端</Link></li>
                     </ul>
                     <hr/>
-                    <Route exact path="/" component={Home}/>
+                    <Route path="/" component={Home}/>
                     <Route path="/about" component={About}/>
                     <Route path="/topics" component={Topics}/>
                 </div>
